@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Heart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/img/MHF Logo.jpg" alt="Logo">
+            <span class="brand-name"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="mhf-bio.html">BIO</li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Mothers Heart Foundation </h1>
+	<h3>~ Together we can ~</h3>
+        <img src="assets/img/hero image.jpg" alt="Hero Image">
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Recent Project highlights</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="assets/img/project1.jpg" alt="Project 1">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/img/project2.jpg" alt="Project 2">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/img/project3.jpg" alt="Project 3">
+                </div>
+        </div>
+</section>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+	    <div class="event-card">
+                <img src="assets/img/event.jpg" alt="Event Image">
+            <div class="event-details">
+                <h3>Event Title</h3>
+                    <p class="event-date">Date: January 31, 2024</p>
+                    <p class="event-location">Location: Chingola</p>
+                    <p class="event-description">Join us for an exciting event to support our cause and make a positive impact in the community.</p>
+                    <a href="events.html" class="event-link">Learn More</a>
+            </div>
+    </div>
+
+    <!-- Partnership Section -->
+    <section class="partnership">
+    <div class="left-content">
+        <h2>Partner with us & Get Involved</h2>
+        <p>Join us in making a difference! Feel free to reach out to us for partnership opportunities or to contribute to our cause.</p>
+	<p>Click <a href="#">here</a> to fill out the membership form</p>
+        <p>For donations, follow the instructions provided on our <a href="#donation">donation page</a></p>
+    </div>
+    <div class="right-content">
+      <div class="right-content-img">
+        <img src="assets/img/hero2.jpg">
+      </div>
+    </div>
+</section>
+
+    </section>
+    
+
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="address">
+            <h3>Visit Us</h3>
+            <p>123 Main Street, Cityville, Country</p>
+        </div>
+        <div class="contact">
+            <h3><b>Contact Us</b></h3>
+            <p><b>Email:</b> info@mothersheart.org</p>
+            <p><b>Phone:</b> +1 (123) 456-7890</p>
+	    <p><b>Whatsapp:</b> +260977554433 </p>
+        </div>
+        <div class="team">
+            <h3>MHF Team</h3>
+            <p>Learn more about the passionate individuals behind our organization.</p>
+            <a href="team.html" class="event-link">Meet The Team </a>
+        </div>
+        <div class="social-icons">
+            <h3>Follow Us</h3>
+            <a href="facebook.com" class="icon-link" target="_blank">
+                <img src="assets/img/facebook-icon.jpg" alt="Facebook Icon">
+            </a>
+            <a href="youtube.com" class="icon-link" target="_blank">
+                <img src="assets/img/youtube-icon.png" alt="YouTube Icon">
+            </a>
+
+	    <a href="https://wa.me/yourphonenumber" target="_blank" class="icon-link">
+                    <img src="assets/img/whatsapp-icon.jpg" alt="WhatsApp Icon">
+            </a>
+        </div>
+    </div>
+<br></br>
+
+    <div class="partners-logo">
+        <img src="assets/img/MHF Partners.jpg">
+    </div>
+   
+</footer>
+<h5>  Copyrights MHF &copy; 2024</h5>
+
+</body>
+
+<!-- Add this script to the end of your HTML body or in the head section -->
+<script>
+    let slideIndex = 0;
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+
+    // Run the slideshow when the page loads
+    window.onload = function () {
+        showSlides();
+    };
+</script>
+
+</html>
